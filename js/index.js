@@ -9,12 +9,13 @@ function callApi() {
         })
         .then(data => {
             //manipulamos la respuesta
-            //console.log(data.results)
+            //console.log(data)
             renderizarDatosUsuario(data.results);
         });
 
-
 }
+callApi();
+
 
 
 function renderizarDatosUsuario(datos) {
